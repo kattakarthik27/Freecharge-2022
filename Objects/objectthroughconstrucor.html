@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // Object through constructor
+    function User(email, pass)
+    {
+        this.email=email;
+        this.pass=pass;
+    }
+    let u1= new User("jil@gmail.com" , "123456");
+    let u2= new User("hill@gmail.com" , "1234567");
+    console.log(u1.email+ " "+u1.pass);
+    console.log(u2.email+ " "+u2.pass);
+</script>
+<body>
+    <h2> Object through constructor </h2>
+</body>
+</html>

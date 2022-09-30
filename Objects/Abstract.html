@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    // user is the object
+    function user(email, pwd)
+    {
+        let email_ID = email;
+        let password = pwd;
+
+        //  getUserDetails is properties, method (getUserDetails)
+
+        let getUserDetails = function()
+        {
+            return (`${email_ID} ${password}`);
+        }
+        this.getUser = function()
+        {
+            return(`${email_ID} ${password}`);
+        }
+    }
+    let userOne = new user("karthik@gmail.com", "12341234");
+    console.log(userOne.email_ID);
+    console.log(userOne.password);
+    console.log(userOne.getUser());
+</script>
+<body>
+    <h2> Abstract </h2>
+</body>
+</html>
